@@ -1,0 +1,134 @@
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  min-height: 100vh;
+  cursor: url("../img/Amber_Normal.cur"), auto;
+}
+
+#body {
+   background: #000000;
+   background-image: url("../img/dark2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.body__container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+@media(min-width: 1200px) {
+  .body__container {
+    left: calc(50% - 420px);
+  }
+}
+
+.page-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-header__logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+.page-header__logo:hover img {
+  transform: rotate3d(0, 1, 0, 6.284rad);
+  transition: all 1s;
+}
+
+.main-navigation {
+  width: 50%;
+}
+
+.site-navigation__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation__item {
+  padding-right: 10px;
+}
+
+.site-navigation__link {
+  color: #f4c422;
+  text-decoration: none;
+}
+
+.site-navigation__link:hover,
+.site-navigation__link:active {
+  opacity: 0.5;
+  cursor: url("../img/Amber_Help.cur"), auto;
+}
+
+.page-main {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+.page-main__paragraph {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 50px 0;
+  text-align: justify;
+  color: #f4c422;
+}
+
+.page-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.page-footer__block {
+  width: 24%;
+  text-align: center;
+}
+
+.page-footer__block-title,
+.page-footer__block-link {
+  color: #f4c422;
+}
+
+.page-footer__block-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-footer__block-link {
+  text-decoration: none;
+}
+
+.page-footer__block-link:hover {
+  opacity: 0.5;
+  cursor: url("../img/Amber_Help.cur"), auto;
+}
+
+.page-footer__block-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
